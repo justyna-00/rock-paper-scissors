@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Kamień papier nożyczki</title>
+
+</head>
+<body>
+  <h1>gra ,,papier, kamień, nożyczki"</h1>
+  <section class="select">
+    <h2>Wybierz:</h2>
+    <img data-option="papier" src="img/paper.jpg" alt="papier" title="Papier" class="first">
+    <img data-option="kamień" src="img/rock.jpg" alt="kamień" title="Kamień">
+    <img data-option="nożyczki" src="img/scissors.jpg" alt="nożyczki" title="Nożyczki">
+  </section>
+
+  <button class="start">Zagraj!</button>
+
+  <section class="panel-left">
+    <h3>Wynik gry:</h3>
+    <p>Twój wybór: <span data-summary="your-choice"></span></p>
+    <p>Wybór komputera: <span data-summary="ai-choice"></span></p>
+    <h2>Zwycięzca gry: <span data-summary="winner"></span></h2>
+  </section>
+
+  <section class="panel-right">
+    <h3>Aktualne wyniki</h3>
+    <p class="numbers">liczba gier: <span>0</span></p>
+    <p class="wins">wygrane: <span>0</span></p>
+    <p class="losses">przegrane: <span>0</span></p>
+    <p class="draws">remisy: <span>0</span></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
